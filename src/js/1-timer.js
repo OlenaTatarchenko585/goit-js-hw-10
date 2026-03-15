@@ -23,7 +23,7 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     
-    if (selectedDate < new Date()) {
+    if (selectedDate <= new Date()) {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
